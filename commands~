@@ -1,0 +1,4 @@
+spark-submit --class com.cloudera.sparkwordcount.JavaWordCount \
+--master local --deploy-mode client --executor-memory 1g \
+--name wordcount --conf "spark.app.id=wordcount" \
+TestJavaSpark-1.0-SNAPSHOT.jar hdfs://quickstart.cloudera:8020/user/cloudera/inputfile.txt 2
